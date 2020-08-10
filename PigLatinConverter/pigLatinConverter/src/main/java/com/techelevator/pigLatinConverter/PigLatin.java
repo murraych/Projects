@@ -36,11 +36,9 @@ public class PigLatin {
 			// end with ay
 			else {
 
-//				word = word.substring(1) + "-" + word.charAt(0) + "ay";
-//				pigLatin.add(word);
+				String consonant = "";
+				String vowel = "";
 				for (int i = 0; i < word.length(); i++) {
-					String consonant = "";
-					String vowel = "";
 					if (Character.toLowerCase(word.charAt(i)) != 'a' && Character.toLowerCase(word.charAt(i)) != 'e'
 							&& Character.toLowerCase(word.charAt(i)) != 'i'
 							&& Character.toLowerCase(word.charAt(i)) != 'o'
@@ -52,9 +50,10 @@ public class PigLatin {
 							|| Character.toLowerCase(word.charAt(i)) == 'o'
 							|| Character.toLowerCase(word.charAt(i)) == 'u') {
 						vowel = word.substring(i);
+						break;
 					}
-					pigLatin.add(vowel + "-" + consonant + "ay");
 				}
+				pigLatin.add(vowel + "-" + consonant + "ay");
 
 			}
 		}
