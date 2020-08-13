@@ -1,0 +1,178 @@
+/* Apply this style to the HTML tag */
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    /* Force Horizontal Scrollbar */
+    white-space: nowrap;
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to bottom, #858C90, #BBB);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+
+/* Style for the header */
+header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+}
+
+header > h1, header > p {
+    display: inline-block;    
+    padding-right: 20px;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.5); 
+    height: 20px;   
+}
+
+header > h1 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+header > p {
+    font-size: .9rem;
+    padding-left: 5px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+/* Style for each trello-list */
+/* All divs that have a class "trello-list" */
+div.trello-list {
+
+
+    /* Layout */
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+    vertical-align: top; 
+
+    /* Look & Feel */
+    background-color: #DDD;
+    
+    border-radius: 2px 3px;
+}
+
+/* Targets any H2 inside of <div class="trello-list"> tag */
+div.trello-list h2 {
+
+    /* Spacing */
+    margin: 8px;
+
+    /* Font */
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+div.trello-list ol {
+    margin: 0;
+    padding: 0;
+}
+
+div.trello-list li {
+    /* Look & Feel */
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    font-size: .9rem;
+    border-radius: 1px;
+    
+    /* Spacing */
+    margin-bottom: 10px;
+    padding: 8px;
+
+    
+    white-space: normal;
+}
+
+
+div.trello-list li:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+
+div.trello-list li:hover {
+    background-color: #f5f6f7;
+    color: #092d42;
+}
+
+
+
+div.trello-list a {
+    /* Layout */ 
+    display: block;
+
+    /* Look */
+    text-decoration: none;
+    color: #888;
+
+    /* Spacing */ 
+    padding: 8px 0px 8px 5px; /* top right bottom left */
+
+    font-size: 0.85rem;
+}
+
+div.trello-list a:hover {
+    background-color: rgba(9, 45, 66, .1);
+}
+
+
+.labels span {
+    display: inline-block;
+    vertical-align: top;
+    width: 35px;
+    height: 8px;
+    border-radius: 3px;
+}
+
+.label.pathway {
+    background-color: red;    
+}
+
+.label.individual {
+    background-color: green;
+}
+
+.label.pair {
+    background-color: teal;
+}
+
+.label.general {
+    background-color: orange;
+}
+
+
+
+
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #BBB;    
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+body::webkit-scrollbar-thumb:hover {
+    background: #888;    
+}

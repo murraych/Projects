@@ -1,0 +1,58 @@
+body,
+#hero footer,
+#featured section,
+#featured section article div,
+#all-items section,
+#all-items section article {
+  display: flex;
+}
+
+body,
+#all-items section {
+  flex-direction: column;
+}
+
+/* Centering Content Horizontally */
+body {
+  align-items: center;
+}
+
+#featured section article div {
+  justify-content: center;
+}
+
+#all-items section article {
+  justify-content: center;
+}
+
+/* Centering Content Vertically */
+#hero footer {
+  align-items: center;
+}
+
+#all-items section article {
+  align-items: center;
+}
+
+/* Applying Layout */
+#hero footer {
+  justify-content: space-between;
+}
+
+#all-items article div:last-child {
+  flex-basis: 80%;
+}
+
+#all-items article:nth-child(even) div:first-child {
+  order: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  #featured section {
+    flex-wrap: wrap;
+  }
+
+  #featured section article:nth-child(even) {
+    border: none;
+  }
+}

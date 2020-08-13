@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form method="post" action="/api/info">
+        <div>
+            <label for="name">Name: </label>
+            <input id="name" name="name" type="text" required="required">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="email" required="required">
+        </div>
+        <div>
+            <label for="dateOfBirth">Date of birth: </label>
+            <input id="dateOfBirth" name="dateOfBirth" type="date">
+        </div>
+        <div>
+            <label for="faveColor">Favorite color: </label>
+            <input id="faveColor" name="faveColor" type="color">
+        </div>
+        <div>
+            <label for="faveNumber">Favorite number: </label>
+            <input id="faveNumber" name="faveNumber" type="number">
+        </div>
+        <div>
+            <label for="confirm">Confirm data is correct: </label>
+            <input id="confirm" name="confirm" type="checkbox">
+        </div>
+        <div>
+            <input type="submit" />
+        </div>
+    </form>
+</body>
+</html>

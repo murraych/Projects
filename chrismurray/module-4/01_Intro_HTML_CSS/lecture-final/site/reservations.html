@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Bits & Bytes</h1>
+        <p>Welcome to the internet's best restaurant</p>
+    </header>
+
+    <nav>
+        <a href="index.html">View menu</a>
+    </nav>
+
+    <main>
+        <h2>Reservation Form</h2>
+        <form method="POST" action="https://example.com/api/reservation">
+            <div>
+                <label for="reservationName">Name:</label>
+                <input id="reservationName" name="reservationName" type="text" />
+            </div>
+            <div>
+                <label for="numberOfGuests">Number of guests:</label>
+                <input id="numberOfGuests" name="numberOfGuests" type="number" />
+            </div>
+            <div>
+                <label for="reservationDate">Date:</label>
+                <input id="reservationDate" name="reservationDate" type="date" />
+            </div>
+            <div>
+                <label for="reservationTime">Time:</label>
+                <input id="reservationTime" name="reservationTime" type="time" />
+            </div>
+            <div>
+                <label for="specialOccasion">Special Occasion:</label>
+                <input id="specialOccasion" name="specialOccasion" type="checkbox" />
+            </div>
+            <div>
+                <input type="submit" />
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 16;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to bottom, #858c90, #bbb);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div.trello-list {
+    display: inline-block;
+    width: 300px;
+    background-color: #ddd;
+    border-radius: 2px 4px;
+}
+
+div.trello-list h2 {
+    margin: 2px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+div.trello-list ol {
+    margin: 10px;
+    padding: 10px;
+}
+
+div.trello-list li {
+  list-style: none;
+  background-color: rgb(255,255,255);
+  font-size: .9em;
+  border-radius: 1px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+div.trello-list li:hover {
+    background-color: antiquewhite;
+    color: red;
+    font-weight: bolder;
+}
+
+div.trello-list li:last-child {
+    margin-bottom: 15px;
+}
+
+div.trello-list a {
+    display: block;
+    color: #888;
+}
+
+div.trello-list a:hover {
+    color: blue;
+}
+
+body{
+    white-space: nowrap;
+}
+
+div.trello-list Li {
+    white-space: normal;
+}
+
+.labels span {
+    display: inline-block;
+    vertical-align: top;
+    width: 35px;
+    height: 8px;
+}
+
+.label.pathway {
+    background-color: red;
+}
+
+.label.individual {
+    background-color: green;
+}
+
+.label.pair {
+    background-color: blue;
+}
+
+.label.general {
+    background-color: orange;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    height: 50px;
+}
+
+main {
+    margin: 50px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #858c90;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: yellow;
+}

@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #cccccc;
+}
+
+img {
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+table {
+    line-height: 25px;
+}
+
+th {
+    font-size: 20px;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+li {
+    line-height: 25px;
+}
+
+a {
+    color:#0000FF;
+}

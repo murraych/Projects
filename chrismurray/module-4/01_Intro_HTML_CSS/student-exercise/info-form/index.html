@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Chris' Super Fantastic Recipe Mailing List</h1>
+        <p>Do you love to cook? Are you terrible at it? If yes, or you want to try new amazing recipes, please fill
+            out the information requested below and we will send you weekly recipes that will make you the star home chef 
+            amongst your friends!
+        </p>
+    </header>
+    
+    <main>
+        <h2>Recipe Guide Mailing List</h2>
+        <form method="POST" action="https://example.com/api/recipe">
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" required/>
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input id="email" name="email" type="text" required/>
+            </div>
+            <div>
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input id="dateOfBirth" name="dateOfBirth" type="date" />
+            </div>
+            <div>
+                <label for="favoriteColorFood">Favorite Color (of food):</label>
+                <input id="favoriteColorFood" name="favoriteColorFood" type="color" />
+            </div>
+            <div>
+                <label for="favoriteNumber">Favorite Number:</label>
+                <input id="favoriteNumber" name="favoriteNumber" type="number" />
+            </div>
+            <div>
+                <label for="confirm">Please Confirm Data is Correct:</label>
+                <input id="confirm" name="confirm" type="checkbox" />
+            </div>
+            <div>
+                <input type="submit"/>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

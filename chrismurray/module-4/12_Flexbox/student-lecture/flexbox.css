@@ -1,0 +1,33 @@
+body, 
+#hero footer, 
+#featured section, 
+#featured section article div, 
+#all-items section, 
+#all-items section article {
+    display: flex;
+}
+
+body,
+#all-items section{
+    flex-direction: column;
+}
+
+#featured section article div {
+    justify-content: center;
+}
+
+#all-items section article {
+    justify-content: center;
+}
+
+#hero footer, #all-items section article {
+    align-items: center;
+}
+
+#hero footer {
+    justify-content: space evenly;
+}
+
+#all-items article div:last-child {
+    flex-basis: 75%;
+}

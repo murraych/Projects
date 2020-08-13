@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px, 1fr, 200px;
+    grid-template-areas: 
+        "header header header"
+        "menu-nav main upcoming-events"
+        "footer footer footer"
+    ;
+
+    height: 100vh;
+    gap: 5px;
+}
+
+header {
+    grid-area: header;
+}
+
+nav#menu-nav {
+    grid-area: menu-nav
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: upcoming-events;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media (max-width: 760px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "menu-nav"
+        "main"
+        "upcoming-events"
+        "footer"
+        ;
+    }
+}

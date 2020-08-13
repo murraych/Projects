@@ -1,0 +1,260 @@
+/*** provided code ***/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #87CEEB;
+}
+
+nav ul {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+nav ul li {
+    list-style: none;
+    width: 30%;
+    background-color: #00afef;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+header h1 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+main img {
+    object-fit: cover;
+    margin-right: 20px;
+    height: 350px;
+    width: 35%;
+}
+
+main li:before {
+    content: '🍡';
+    margin-left: -31px;
+    padding-right: 8px;
+}
+
+main, section, footer {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.store-button { /* used for store link in "Get refreshed" section */
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #00afef;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*** student code ***/
+
+/* main grid*/
+body {
+    grid-gap: 6px;
+    margin: 8px 20px;
+}
+body#home {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-areas:
+       "header header nav nav"
+       "main main main main"
+       "race race store store"
+       "footer footer footer footer";
+}
+body#contact {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+       "header nav"
+       "main main"
+       "footer footer";
+}
+header {
+    grid-area: header;
+    display: flex;
+}
+nav {
+    grid-area: nav;
+}
+main {
+    grid-area: main;
+}
+#race {
+    grid-area: race;
+}
+#store {
+    grid-area: store;
+}
+footer {
+    grid-area: footer;
+}
+
+/* race grid */
+#race {
+    display: grid;
+    grid-template-areas:
+        "race-image race-header"
+        "race-image race-description";
+    justify-items: center;
+}
+#race > #race-image {
+    grid-area: race-image;
+}
+#race > h2 {
+    grid-area: race-header;
+}
+#race > p {
+    grid-area: race-description;
+}
+
+/* store grid */
+#store {
+    display: grid;
+    grid-template-areas:
+        "store-header"
+        "store-description"
+        "store-button";
+    justify-items: center;
+}
+#store > h2 {
+    grid-area: store-header;
+}
+#store > p {
+    grid-area: store-description;
+}
+#store > a.store-button {
+    grid-area: store-button;
+}
+
+
+/* nav */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+main#homepage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main#contact-us div {
+    padding-top: 20px;
+}
+main#contact-us label {
+    display: block;
+    padding-bottom: 5px;
+}
+main#contact-us input {
+    height: 25px;
+    width: 300px;
+}
+main#contact-us select {
+    height: 30px;
+    width: 307px;
+}
+main#contact-us input[type="submit"] {
+    height: 40px;
+    width: 200px;
+    background-color: #00afef;
+    color: #ffffff;
+    border: #00afef;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+main li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+section {
+    line-height: 24px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+
+@media (max-width:800px) {
+    body#home {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+           "header"
+           "nav"
+           "main"
+           "race"
+           "store"
+           "footer";
+        margin: 8px;
+    }
+    body#contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+           "header"
+           "nav"
+           "main"
+           "footer";
+        grid-gap: 6px;
+        margin: 8px;
+    }
+    #race {
+        grid-template-areas:
+            "race-image race-header"
+            "race-description race-description";
+    }
+    header h1 {
+        padding-top: 0;
+    }
+    nav ul {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    nav ul li {
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main#homepage {
+        display: block;
+    }
+    main img {
+        width: 100%;
+    }
+    main#contact-us input, textarea {
+        width: 100%;
+    }
+    main#contact-us select {
+        width: 102%;
+    }
+}
