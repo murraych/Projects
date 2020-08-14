@@ -1,3 +1,0 @@
-{
-    "/topics/:id": "/topics/:id?_embed=messages"
-}
